@@ -1,6 +1,8 @@
-Implementation of the paper, "Endurable Transient Inconsistency in Byte-Addressable Persistent B+-Tree".
+Implementation of the paper, "Scalable NUMA-aware Persistent B+-Tree for Non-Volatile Memory Devices".
 
-The paper is to appear in FAST 2018.
+The paper is to appear in Cluster Computing Journal 2022.
+
+This work is an extension of FAST and FAIR based Persistent B+-tree published in USENIX FAST 2018. In this work, we identified the limitation of FAST&FAIR atop manycore machines and proposed a Future-based per-core (thread) buffer on top of B+-tree and let the application directly perform operation to the per-code buffer while the dedicated asynchronous threads are responsible for flushing the data from per-core buffers to global B+-tree. The rest of the explanation is same the FAST&FAIR B+-tree. 
 
 Failure-Atomic ShifT(FAST) and Failure-Atomic In-place Rebalancing(FAIR) are simple and novel algorithms that make B+-Tree tolerant againt system failures without expensive COW or logging for Non-Volatile Memory(NVM). A B+-Tree with FAST and FAIR can achieve high performance comparing to the-state-of-the-art data structures for NVM. Because the B+-Tree supports the sorted order of keys like a legacy B+-Tree, it is also beneficial for range queries.
 
