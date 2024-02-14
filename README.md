@@ -11,7 +11,11 @@ In addition, a read query can detect a transient inconsistency in a B+-Tree node
 We strongly recommend to refer to the paper for the details.
 
 git clone https://github.com/safdarjamil95/F3-tree.git
+
 cd F3-tree
+
 make
+
 There are two versions of concurrent test programs - One is only search and only insertion, the other is a mixed workload.
+
 ./fbtree_concurrent -n [the # of data] -w [write latency of NVM] -i [input path] -t [the # of threads] (e.g. ./btree -n 10000 -w 300 -i ~/input.txt -t 16)
