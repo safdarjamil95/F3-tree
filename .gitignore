@@ -1,0 +1,33 @@
+bin/
+build/
+generated/
+
+# IDE and OS artifacts
+.vs/
+.vscode/
+.DS_Store
+*.suo
+*.ipch
+*.db
+*.sqlite
+*.o
+*.d
+*.exe
+*.out
+*.obj
+*.pdb
+*.ilk
+*.idb
+
+# YCSB-cpp build outputs
+YCSB-cpp/ycsb
+YCSB-cpp/HdrHistogram_c/src/
+YCSB-cpp/HdrHistogram_c/test/
+YCSB-cpp/HdrHistogram_c/CMakeFiles/
+YCSB-cpp/HdrHistogram_c/CMakeCache.txt
+YCSB-cpp/HdrHistogram_c/cmake_install.cmake
+YCSB-cpp/HdrHistogram_c/Makefile
+YCSB-cpp/HdrHistogram_c/CTestTestfile.cmake
+
+# PMDK pool files
+*.pool

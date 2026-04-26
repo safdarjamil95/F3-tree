@@ -1,0 +1,3 @@
+[submodule "YCSB-cpp"]
+	path = YCSB-cpp
+	url = https://github.com/ls4154/YCSB-cpp.git
