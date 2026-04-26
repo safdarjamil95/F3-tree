@@ -4,10 +4,10 @@ This is the canonical open-source implementation of F3-tree, a concurrent B+-tre
 
 F3-tree was proposed and designed by S. Jamil. The algorithm is described in:
 
-> **F3-tree: A Novel Concurrent B+-tree with Per-Thread Future Objects**  
+> **Scalable NUMA-aware persistent B+-tree for non-volatile memory devices**  
 > S. Jamil — *Cluster Computing*, 2022
 
-The included PDF (`Cluster_Computing_2022_S_Jamil.pdf`) is the published paper.
+The published paper is available here: https://link.springer.com/article/10.1007/s10586-022-03766-1
 
 ## Design
 
